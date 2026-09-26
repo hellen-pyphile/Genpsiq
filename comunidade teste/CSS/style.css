@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import "question-box.css";
+@import "left-sidebar.css";
+@import "right-sidebar.css";
+
+:root {
+    --twitter-color: #604f7e;
+    --twitter-background: #bfb6cf;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--twitter-background);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-twitter{
+    color: var(--twitter-color);
+    font-size: 30px!important;
+}
+
+.sidebar, .main{
+    border-right: 1px solid var(--twitter-background);
+}
+
+.grid-container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 1.1fr;
+    grid-template-rows: 0.8fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "sidebar main right_sidebar ."
+    "sidebar main right_sidebar ."
+    "sidebar main right_sidebar .";
+}
+
+.sidebar {grid-area: sidebar;}
+.main {grid-area: main;}
+.right_sidebar {grid-area: right_sidebar;}
+
+.pagr_title{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--twitter-background);
+    background: #bfb6cf;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.dropbtn{
+    color: #8f8a97;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.dropdown i,  .dropdown-content span{
+    color: red;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #bfb6cf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(176, 189, 189);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+@media screen and (max-width: 996px){
+    .sidebar ul li{
+        text-align: center;
+        padding: 15px 10px;
+        display: block;
+    }
+    .sidebar ul li span, .sidebar_tweet, .right_sidebar{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 0.3fr 1.7fr;
+        max-width: 700px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "sidebar main"
+        "sidebar main";
+    }
+    .sidebar {grid-area: sidebar; }
+    .main {grid-area: main;}
+}

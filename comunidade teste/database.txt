@@ -1,0 +1,10 @@
+CREATE DATABASE comunidade;
+
+USE comunidade;
+
+CREATE TABLE posts (
+    post_id INT(11) NOT NULL AUTO_INCREMENT,
+    post_text VARCHAR(255) NOT NULL,
+    post_date DATETIME NOT NULL,
+    PRIMARY KEY (post_id)
+);

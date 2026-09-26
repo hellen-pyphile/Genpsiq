@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#header__section {
+    padding: 150px 0 120px 0; 
+}
+
+@media (max-width: 768px) {
+    #header__section {
+        padding-top: 180px; 
+    }
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 36px !important;
+}
+
+.navbar-brand:hover {
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Defina a cor padrão dos links e ícones */
+.nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    text-decoration: none !important; 
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none!important;
+}
+
+/* Botões específicos: "Conecte-se" e "Faça Parte da Comunidade" */
+.nav-link.button.btn-nav {
+    background: #8f4ab7;
+    color: #e2dada !important;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.nav-link.button.btn-nav:hover {
+    background-color: #9c48cc;
+    text-decoration: none;
+    color: #e2dada !important;
+}
+
+/* Ajuste adicional para os botões principais */
+#header__section .btn-nav {
+    background-color: #8f4ab7;
+    color: #e2dada !important;
+    font-weight: 600;
+    padding: 14px 40px; 
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#header__section .btn-nav:hover {
+    background-color: #9c48cc;
+}
+
+.btn-header {
+    padding: 14px 40px;
+}
+
+.btn-nav {
+    padding: 8px 20px!important;
+    margin: 0 10px;
+}
+
+#header__section {
+    padding: 90px 0 120px 0;
+}
+
+#header__section h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+#header__section p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+#header__section img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/*#about-us__section {
+    padding: 80px 0;
+    width: 100%;
+    background: #8f4ab7;
+    background: linear-gradient(to right, #9d23c2, #9e2fdf);
+    color: #e2d9e2;
+}
+
+/*#about-us__section img {
+    width: 100%;
+    max-width: 350px;
+}
+
+/*#about-us__section h2 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+#about-us__section p {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+#projects__section {
+    padding: 80px 0 50px 0;
+}
+
+#projects__section h3{
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#projects__section img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
+
+#footer__section {
+    padding: 40px 180px;
+    width: 100%;
+    background: #8f4ab7;
+}*/
+
+#footer__section ul,
+li,
+.social-icons p {
+    font-size: 20px;
+}
+/*
+.social-icons img {
+    width: 40px;
+    margin-top: 5px;
+}
+
+.font-weight-bold {
+    text-align: left;
+}*/
+

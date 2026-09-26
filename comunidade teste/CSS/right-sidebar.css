@@ -1,0 +1,86 @@
+.right_sidebar{
+    position: sticky;
+    top: o;
+    height: 100vh;
+}
+
+.search-container{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 80%;
+    cursor: pointer;
+    border: 1px solid var(--twitter-background);
+}
+
+.search-container .search-input{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0);
+}
+
+.search-container .search-btn .fa{
+    color: rgb(101,110,134);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.trends_box{
+    background-color: rgb(245,248,250);
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 80%;
+    cursor: pointer;
+
+}
+
+.trends_header{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e0e5e9;
+    padding: 15px 15px 10px;
+}
+
+.trend{
+    border-bottom: 1px solid #e0e5e9;
+    padding: 15px;
+}
+
+.trend:hover, .trends_show-more:hover{
+    background-color: rgb(245,248,250);
+}
+
+.trens_show-more{
+    padding: 15px;
+}
+
+.trens_show-more a{
+    color: var(--twitter-color);
+}
+
+.trens_show-more:hover{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.trends_body span{
+    font-size: 14px;
+    color: rgb(101,110,134);
+}
+
+.trends_body p{
+    font-weight: 700;
+}
+
+.trends_header p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.trends_header .fa-cog{
+    color: var(--twitter-color);
+}
