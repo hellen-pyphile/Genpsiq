@@ -40,3 +40,13 @@ Como o projeto utiliza **PHP** no back-end[cite: 2], você precisará de um ambi
 1. Clone este repositório no seu terminal:
 ```bash
 git clone [https://github.com/hellen-pyphile/Genpsiq.git](https://github.com/hellen-pyphile/Genpsiq.git)
+```
+
+2. Mova a pasta extraída (`Genpsiq`) para o diretório público do seu servidor local:
+   - **Se usar o XAMPP:** mova para a pasta `C:\xampp\htdocs\`
+   - **Se usar o WampServer:** mova para a pasta `C:\wamp64\www\`
+3. Abra o painel de controlo do seu servidor local (ex: XAMPP Control Panel) e inicie o módulo **Apache**.
+4. Abra o navegador da sua preferência e acesse o endereço:
+
+```text
+http://localhost/Genpsiq
